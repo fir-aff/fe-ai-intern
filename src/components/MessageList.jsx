@@ -56,7 +56,7 @@ const MessageList = memo(forwardRef(function MessageList(
           {messages.map((message) => (
             <ChatMessage key={message.id} message={message} />
           ))}
-          {isLoading && <TypingIndicator />}
+          {isLoading && !messages.some((m) => m.isStreaming) && <TypingIndicator />}
           {error && <ErrorBubble message={error} onRetry={onRetry} />}
         </div>
       )}

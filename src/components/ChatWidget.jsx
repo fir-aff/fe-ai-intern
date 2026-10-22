@@ -131,6 +131,7 @@ export default function ChatWidget() {
               value={chat.draft}
               onChange={chat.setDraft}
               onSubmit={chat.submit}
+              onStop={chat.stop}
               isLoading={chat.isLoading}
             />
           </section>

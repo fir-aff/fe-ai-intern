@@ -120,8 +120,9 @@ body {
 .chat-markdown {
   max-width: 100%;
   overflow-x: auto;
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #1e293b;
 }
 
 .chat-markdown > *:first-child {
@@ -133,38 +134,62 @@ body {
 }
 
 .chat-markdown p {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.85rem;
 }
 
 .chat-markdown ul,
 .chat-markdown ol {
-  margin: 0 0 0.75rem;
-  padding-left: 1.25rem;
+  margin: 0.5rem 0 0.85rem;
+  padding-left: 1.4rem;
 }
 
 .chat-markdown ul {
-  list-style: disc;
+  list-style-type: disc;
 }
 
 .chat-markdown ol {
-  list-style: decimal;
+  list-style-type: decimal;
 }
 
-.chat-markdown li + li {
-  margin-top: 0.25rem;
+.chat-markdown li {
+  margin-bottom: 0.35rem;
+  line-height: 1.55;
+}
+
+.chat-markdown h1,
+.chat-markdown h2,
+.chat-markdown h3,
+.chat-markdown h4 {
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-markdown h2 {
+  font-size: 1.05rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.25rem;
+}
+
+.chat-markdown h3 {
+  font-size: 0.95rem;
+}
+
+.chat-markdown hr {
+  margin: 1.25rem 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chat-markdown strong {
+  font-weight: 600;
+  color: #0f172a;
 }
 
 .chat-markdown a {
   color: #00549b;
   text-decoration: underline;
-}
-
-.chat-markdown h1,
-.chat-markdown h2,
-.chat-markdown h3 {
-  margin: 0 0 0.5rem;
-  font-weight: 700;
-  color: #0f172a;
 }
 
 .chat-markdown table {
@@ -173,6 +198,7 @@ body {
   border-collapse: collapse;
   font-size: 12px;
   line-height: 1.45;
+  margin-bottom: 0.75rem;
 }
 
 .chat-markdown th,
